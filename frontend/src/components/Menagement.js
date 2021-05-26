@@ -43,6 +43,15 @@ const Menagement = () => {
               textBtn={"Edytuj"}
             />
           </Col>
+          <Col>
+            <CustomCard
+              title={"Użytkownicy"}
+              text={"tutaj możesz wgrać plik"}
+              imgUrl={""}
+              linkRedirect={"/manegment/user/fromFile"}
+              textBtn={"Dodaj"}
+            />
+          </Col>
         </Row>
       </Container>
     </>

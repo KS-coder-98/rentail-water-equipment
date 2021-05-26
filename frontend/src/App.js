@@ -20,6 +20,7 @@ import UserMangemnt from "./components/mangmentUser/UserMangemnt";
 import EditItemDetails from "./components/managmentItems/EditItemDetails";
 import AddNewItem from "./components/managmentItems/AddNewItem";
 import ManagementRentails from "./components/rentails/ManagementRentails";
+import ImportUsersFromFile from "./components/mangmentUser/ImportUsersFromFile";
 
 const App = () => {
   const isLogin = getIsLoginStorage();
@@ -46,7 +47,11 @@ const App = () => {
           <Route path="/userDatails/:id" component={UserDetails} />
           <Route path="/registration" component={RegistrationForm} />
           <Route path="/menagment" exact component={Menagement} />
-          <Route path="/manegment/user" component={UserMangemnt} />
+          <Route path="/manegment/user" exact component={UserMangemnt} />
+          <Route
+            path="/manegment/user/fromFile"
+            component={ImportUsersFromFile}
+          />
           <Route path="/manegment/rentails" component={ManagementRentails} />
           <Route
             path="/manegment/item"
