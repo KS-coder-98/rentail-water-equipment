@@ -47,6 +47,8 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
             "/api/items",
             "/api/items/*",
 
+            "/uploadFile",
+
             //for categories
             "/api/categories",
 
